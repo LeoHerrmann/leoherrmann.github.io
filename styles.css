@@ -1,3 +1,46 @@
+:root {
+    --ratio: 1.3;
+    --space-4: calc(var(--space-3) * var(--ratio));
+    --space-3: calc(var(--space-2) * var(--ratio));
+    --space-2: calc(var(--space-1) * var(--ratio));
+    --space-1: calc(var(--space-0) * var(--ratio));
+    --space-0: 1em;
+    --space--1: calc(var(--space-0) / var(--ratio));
+}
+
+
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    src: url("Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 600;
+    src: url("Montserrat/Montserrat-Bold.ttf");
+}
+
+
+
+h1 {
+    font-size: var(--space-3);
+}
+
+h1, p {
+    margin: 0;
+}
+
+
+
 body {
-    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.3;
+    margin: 0;
+    padding: var(--space--1);
+    padding-top: var(--space-1);
+}
+
+body > * + * {
+    margin-top: var(--space-0);
 }
