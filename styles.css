@@ -4,8 +4,9 @@
     --space-3: calc(var(--space-2) * var(--ratio));
     --space-2: calc(var(--space-1) * var(--ratio));
     --space-1: calc(var(--space-0) * var(--ratio));
-    --space-0: 1em;
+    --space-0: 1rem;
     --space--1: calc(var(--space-0) / var(--ratio));
+    --space--2: calc(var(--space--1) / var(--ratio));
 }
 
 
@@ -26,9 +27,23 @@
 h1 {
     font-size: var(--space-3);
 }
+h2 {
+    font-size: var(--space-2);
+}
+h3 {
+    font-size: var(--space-1);
+}
 
-h1, p {
+h1, h2, h3, p {
     margin: 0;
+}
+
+p {
+    color: #333;
+}
+
+a {
+    color: #07a;
 }
 
 
@@ -43,4 +58,14 @@ body {
 
 body > * + * {
     margin-top: var(--space-0);
+}
+
+
+
+.project_container > a{
+    display: block;
+    font-size: var(--space--1);
+}
+.project_container > p {
+    margin-top: var(--space--2);
 }
