@@ -61,11 +61,33 @@ body > * + * {
 }
 
 
-
-.project_container > a{
-    display: block;
-    font-size: var(--space--1);
+h2 {
+    margin-top: var(--space-3);
 }
-.project_container > p {
+
+#projects_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-gap: var(--space-2);
+    padding: 0 var(--space-0);
+}
+
+.project_container {
+    box-sizing: border-box;
+    /*box-shadow: 0 5px 20px rgba(0,0,0,0.2);*/
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.project_container > .image {
+    background-size: cover;
+    background-position: top;
+    height: 250px;
+}
+.project_container > .text {
+    padding: var(--space-0);
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+}
+.project_container p {
     margin-top: var(--space--2);
 }
