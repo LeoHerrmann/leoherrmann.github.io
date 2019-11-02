@@ -67,15 +67,15 @@ h2 {
 
 #projects_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: var(--space-2);
-    padding: 0 var(--space-0);
+    padding: 0 var(--space--2);
 }
 
 .project_container {
     box-sizing: border-box;
-    /*box-shadow: 0 5px 20px rgba(0,0,0,0.2);*/
-    border: 1px solid #CCC;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    /*border: 1px solid #CCC;*/
     border-radius: 10px;
     overflow: hidden;
 }
@@ -87,6 +87,7 @@ h2 {
 .project_container > .text {
     padding: var(--space-0);
     box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    height: calc(100% - 250px);
 }
 .project_container p {
     margin-top: var(--space--2);
