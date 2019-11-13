@@ -1,3 +1,6 @@
+13.11.2019:
+Changed layout again
+
 03.11.2019:
 Replaced screenshots with icons
 New layout
