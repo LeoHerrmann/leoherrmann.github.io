@@ -98,11 +98,7 @@ header + .placeholder {
 }
 
 .project_container {
-    /*display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: var(--space-1) 1fr var(--space-4);*/
     position: relative;
-    grid-gap: var(--space-0);
     box-sizing: border-box;
     border: 1px solid #EEE;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
@@ -116,10 +112,8 @@ header + .placeholder {
     background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
-    height: 0;
     width: var(--space-5);
     height: var(--space-5);
-    align-self: center;
     float: left;
     margin-right: var(--space--2);
 }
@@ -129,7 +123,7 @@ header + .placeholder {
 }
 
 .project_container > .text {
-    padding-top: var(--space--2);
+    margin-top: var(--space--2);
 }
 .project_container > .text > * + * {
     margin-top: var(--space--2);
@@ -147,8 +141,7 @@ header + .placeholder {
 }
 .project_container > .placeholder {
     height: var(--space-4);
-    margin: 0;
-    margin-top: var(--space--2);
+    margin: var(--space--2) 0 0 0;
 }
 .project_container > .links_container > a {
     flex-grow: 1;

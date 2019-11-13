@@ -1,5 +1,6 @@
 13.11.2019:
 Changed layout again
+Cleanup
 
 03.11.2019:
 Replaced screenshots with icons
