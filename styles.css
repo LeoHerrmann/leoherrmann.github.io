@@ -116,6 +116,7 @@ header + .placeholder {
     height: var(--space-5);
     float: left;
     margin-right: var(--space--2);
+    border-radius: 5px;
 }
 
 .project_container > h3 {
