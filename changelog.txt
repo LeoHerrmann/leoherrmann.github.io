@@ -1,3 +1,6 @@
+17.11.2019:
+Timetable icon updated
+
 16.11.2019
 New project: Snek
 Rounded corners on icons
