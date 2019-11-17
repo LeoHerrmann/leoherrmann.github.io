@@ -1,6 +1,7 @@
 17.11.2019:
 Timetable icon updated
 Light shadows below icons
+Redesign of links_container
 
 16.11.2019
 New project: Snek

@@ -138,7 +138,6 @@ header + .placeholder {
     width: 100%;
     height: var(--space-4);
     display: flex;
-    align-items: center;
     border-top: 1px solid #DDD;
 }
 .project_container > .placeholder {
@@ -147,5 +146,12 @@ header + .placeholder {
 }
 .project_container > .links_container > a {
     flex-grow: 1;
-    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+.project_container > .links_container > a > span {
+    font-size: var(--space-1);
 }
