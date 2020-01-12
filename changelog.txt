@@ -1,3 +1,6 @@
+12.01.2020:
+text-align: justify in project_containers
+
 17.11.2019:
 Timetable icon updated
 Light shadows below icons

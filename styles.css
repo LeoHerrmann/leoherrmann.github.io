@@ -126,6 +126,7 @@ header + .placeholder {
 
 .project_container > .text {
     margin-top: var(--space--2);
+    text-align: justify;
 }
 .project_container > .text > * + * {
     margin-top: var(--space--2);
