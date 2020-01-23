@@ -1,3 +1,7 @@
+23.01.2020:
+New project: Snek Server
+Small style adjustments
+
 12.01.2020:
 text-align: justify in project_containers
 

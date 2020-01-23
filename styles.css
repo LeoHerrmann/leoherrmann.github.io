@@ -16,7 +16,7 @@
 @font-face {
     font-family: "Montserrat";
     font-weight: 400;
-    src: url("Montserrat/Montserrat-Regular.ttf");
+    src: url("Montserrat/Montserrat-Medium.ttf");
 }
 @font-face {
     font-family: "Montserrat";
@@ -89,12 +89,20 @@ header + .placeholder {
 
 
 
+h2 {
+    max-width: 800px;
+    margin: var(--space-0) auto 0 auto;
+}
+
+
 
 
 #projects_container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: var(--space-0);
+    max-width: 800px;
+    margin: var(--space-0) auto 0 auto;
 }
 
 .project_container {
