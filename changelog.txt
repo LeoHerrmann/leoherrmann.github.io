@@ -1,5 +1,7 @@
 25.01.2019:
 Sinase icon padding corrected
+Redesign of buttons
+Other small styling adjustments
 
 23.01.2020:
 New project: Snek Server
