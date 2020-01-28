@@ -1,3 +1,7 @@
+28.01.2019:
+Small style adjustments
+Removed unused CSS
+
 25.01.2019:
 Sinase icon padding corrected
 Redesign of buttons
