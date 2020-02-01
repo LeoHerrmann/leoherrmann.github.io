@@ -1,3 +1,7 @@
+01.02.2020:
+Updated description text
+Created README
+
 28.01.2019:
 Small style adjustments
 Removed unused CSS
