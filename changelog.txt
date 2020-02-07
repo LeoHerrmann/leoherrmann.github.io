@@ -1,3 +1,8 @@
+07.02.2020:
+Added meta description
+Added lang attribute to html tag
+Added <!doctype html>
+
 01.02.2020:
 Updated description text
 Created README
