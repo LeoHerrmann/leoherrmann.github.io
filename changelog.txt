@@ -1,3 +1,7 @@
+29.02.2020:
+New project: Vertretungsplan
+Small layout change
+
 07.02.2020:
 Added meta description
 Added lang attribute to html tag
@@ -28,7 +32,7 @@ Timetable icon updated
 Light shadows below icons
 Redesign of links_container
 
-16.11.2019
+16.11.2019:
 New project: Snek
 Rounded corners on icons
 
@@ -40,6 +44,6 @@ Cleanup
 Replaced screenshots with icons
 New layout
 
-02.11.2019
+02.11.2019:
 New project: Sinase
 Style improvements
