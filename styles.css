@@ -114,7 +114,6 @@ h2, #projects_container {
     background-repeat: no-repeat;
     width: var(--space-5);
     height: var(--space-5);
-    margin-right: var(--space-0);
     border-radius: 5px;
     border: 1px solid #DDD;
 }
