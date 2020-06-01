@@ -1,3 +1,6 @@
+01.06.2020:
+Removed Snek (Local) since the server version supports offline functionality now
+
 29.02.2020:
 New project: Vertretungsplan
 Small layout change
