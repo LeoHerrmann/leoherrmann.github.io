@@ -17,11 +17,13 @@
 @font-face {
     font-family: "Montserrat";
     font-weight: 400;
+    font-display: swap;
     src: url("Montserrat/Montserrat-Medium.ttf");
 }
 @font-face {
     font-family: "Montserrat";
     font-weight: 600;
+    font-display: swap;
     src: url("Montserrat/Montserrat-SemiBold.ttf");
 }
 
@@ -49,8 +51,8 @@ body {
     margin: 0;
     padding: 0 var(--space-0);
     padding-bottom: var(--space-0);
-    color: #333;
-    background-color: #F0F0F0;
+    color: hsl(190, 20%, 25%);
+    background-color: hsl(175, 0%, 95%);
 }
 
 body > * + * {
@@ -69,9 +71,10 @@ header {
     width: 100%;
     padding: 0 var(--space-0);
     box-sizing: border-box;
-    background: #FFF;
+    color: #FFF;
+    background-color: hsl(190, 50%, 30%);
     z-index: 10;
-    box-shadow: 0 0 7px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 7px rgba(0,0,0,0.3);
 }
 header > h1 {
     line-height: var(--space-5);
@@ -102,7 +105,7 @@ h2, #projects_container {
 .project_container {
     position: relative;
     box-sizing: border-box;
-    box-shadow: 0 2px 7px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 7px rgba(0,0,0,0.1);
     border-radius: 5px;
     padding: var(--space-0);
     background-color: #FFF;
@@ -115,7 +118,8 @@ h2, #projects_container {
     width: var(--space-5);
     height: var(--space-5);
     border-radius: 5px;
-    border: 1px solid #DDD;
+    border: 1px solid hsl(190, 25%, 90%);
+    box-sizing: border-box;
 }
 
 .project_container > h3 {
@@ -140,7 +144,7 @@ h2, #projects_container {
 .project_container > .links_container > a {
     text-decoration: none;
     font-weight: 600;
-    background-color: #07A;
+    background-color: hsl(190, 50%, 35%);
     color: #FFF;
     font-size: var(--space--1);
     text-transform: uppercase;
@@ -148,10 +152,10 @@ h2, #projects_container {
     padding: 0 var(--space--2);
     display: inline-block;
     border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 .project_container > .links_container > a:first-of-type {
-    margin-right: 1ch;
+    margin-right: var(--space-0);
 }
 .project_container > .links_container > a > span {
     font-size: var(--space-0);
