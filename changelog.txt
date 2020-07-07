@@ -1,5 +1,6 @@
 07.07.2030:
 Visual improvements
+Reduced size of vertretungsplan_icon.png
 
 27.06.2020:
 New project: Autosnek
