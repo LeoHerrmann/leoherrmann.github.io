@@ -1,4 +1,7 @@
-07.07.2030:
+08.08.2020
+Updated descriptions
+
+07.07.2020:
 Visual improvements
 Reduced size of vertretungsplan_icon.png
 
