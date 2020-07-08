@@ -1,5 +1,6 @@
 08.08.2020
 Updated descriptions
+README updated
 
 07.07.2020:
 Visual improvements
