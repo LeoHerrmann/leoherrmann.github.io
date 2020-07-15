@@ -1,6 +1,7 @@
 15.07.2020:
 Updated text
 Resized images
+Background pattern for greeter
 
 13.07.2020:
 Greeter
