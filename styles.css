@@ -47,7 +47,7 @@ h1, h2, h3, p {
 #greeter a, .project_container > .links_container > a {
     text-decoration: none;
     font-weight: 600;
-    background-color: hsl(190, 50%, 35%);
+    background-color: hsl(190, 50%, 38%);
     color: #FFF;
     font-size: var(--space--1);
     text-transform: uppercase;
@@ -87,7 +87,8 @@ body {
     position: relative;
     height: 100%;
     z-index: 20;
-    background-color: hsl(190, 50%, 30%);
+    /*background-color: hsl(190, 50%, 30%);*/
+    background: linear-gradient(-10deg, hsl(190, 50%, 30%) 0% 33%, hsl(190, 50%, 38%) 20% 67%, hsl(190, 50%, 46%) 67% 100%);
     color: #FFF;
     scroll-snap-align: start;
 }
@@ -143,11 +144,6 @@ header > h1 {
     line-height: var(--space-5);
     font-size: var(--space-2);
     text-align: center;
-}
-
-header + .placeholder {
-    height: var(--space-5);
-    margin: 0;
 }
 
 

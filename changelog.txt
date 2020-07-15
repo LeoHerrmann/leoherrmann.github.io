@@ -1,5 +1,6 @@
 15.07.2020:
 Updated text
+Resized images
 
 13.07.2020:
 Greeter
