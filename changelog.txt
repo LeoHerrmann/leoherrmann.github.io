@@ -1,5 +1,6 @@
 28.07.2020:
 Reduced size of icons
+New project: Autosim
 
 15.07.2020:
 Updated text
