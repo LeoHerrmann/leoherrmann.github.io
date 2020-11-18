@@ -27,6 +27,16 @@
         <div id="main_content">
             <header>
                 <h1>Leo Herrmann</h1>
+
+                <div id="menu" class="hidden">
+                    <button class="menu_button icon-cancel" onclick="menu.hide();"></button>
+
+                    <a onclick="menu.hide();" href="#greeter">Start</a>
+                    <a onclick="menu.hide();" href="#main_content">Projects</a>
+                    <a onclick="menu.hide();" href="https://github.com/LeoHerrmann/" target="blank">GitHub</a>
+                </div>
+
+                <button class="menu_button icon-menu" onclick="menu.show();"></button>
             </header>
 
 
@@ -155,5 +165,23 @@
                 </div>
             </div>
         </div>
+
+
+
+        <script>
+            var menu = {
+                show: function() {
+                    var menu = document.getElementById("menu");
+
+                    menu.classList.remove("hidden");
+                },
+
+                hide: function() {
+                    var menu = document.getElementById("menu");
+
+                    menu.classList.add("hidden");
+                }
+            }
+        </script>
     </body>
 </html>

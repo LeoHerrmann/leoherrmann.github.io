@@ -1,0 +1,5 @@
+
+.icon-cancel:before { content: '\2715'; } /* '✕' */
+.icon-open:before { content: '\f081'; } /* '' */
+.icon-github:before { content: '\f09b'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
