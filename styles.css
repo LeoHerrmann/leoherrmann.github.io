@@ -157,10 +157,13 @@ header > h1 {
     display: inline-block;
 }
 
+header > .menu_button {
+    margin-right: calc(((var(--space-5) - var(--space-3)) / 2) - var(--space-0))
+}
+
 
 
 #menu {
-    /*display: none;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -194,11 +197,16 @@ header > h1 {
     text-decoration: none;
 }
 
+#menu > a:active {
+    text-decoration: underline;
+}
+
 #menu > .menu_button {
     position: fixed;
     top: 0;
-    right: var(--space-0);
+    right: calc((var(--space-5) - var(--space-3)) / 2);
 }
+
 
 
 .menu_button {
@@ -212,6 +220,13 @@ header > h1 {
     border: 0;
     background: transparent;
     z-index: 40;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.menu_button:active {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: none;
 }
 
 
