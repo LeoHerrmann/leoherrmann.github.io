@@ -220,6 +220,17 @@
                     menu.classList.add("hidden");
                 }
             };
+
+
+
+            document.body.addEventListener("scroll", function(e) {
+                var scroll_position = document.body.scrollTop;
+
+                var greeter_text = document.querySelector("#greeter > .center > div");
+
+                greeter_text.style.transform = `translateY(${0.25 * scroll_position}px)`;
+                greeter_text.style.opacity = 1 - scroll_position / 360;
+            });
         </script>
     </body>
 </html>
