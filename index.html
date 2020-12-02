@@ -12,12 +12,26 @@
 
 
     <body>
+        <header>
+            <h1>Leo Herrmann</h1>
+
+            <div id="menu" class="hidden">
+                <button class="menu_button icon-cancel" onclick="menu.hide();" aria-label="menu close"></button>
+
+                <a onclick="menu.hide();" href="#greeter">Start</a>
+                <a onclick="menu.hide();" href="#main_content">Projects</a>
+                <a onclick="menu.hide();" href="https://github.com/LeoHerrmann/" target="blank">GitHub</a>
+            </div>
+
+            <button class="menu_button icon-menu" onclick="menu.show();" aria-label="menu open"></button>
+        </header>
+
+
         <div id="greeter">
             <div class="center">
                 <div>
-                <h2>Hey, I'm Leo.</h2>
-                <p>In my free time, I code interactive applications for the web.</p>
-                <a href="#main_content">View projects</a>
+                    <h2>Hey, I'm <span>Leo</span>.</h2>
+                    <p>In my free time, I code interactive applications for the web. Here's a selection of my previous work.</p>
                 </div>
             </div>
         </div>
@@ -25,22 +39,6 @@
 
 
         <div id="main_content">
-            <header>
-                <h1>Leo Herrmann</h1>
-
-                <div id="menu" class="hidden">
-                    <button class="menu_button icon-cancel" onclick="menu.hide();"></button>
-
-                    <a onclick="menu.hide();" href="#greeter">Start</a>
-                    <a onclick="menu.hide();" href="#main_content">Projects</a>
-                    <a onclick="menu.hide();" href="https://github.com/LeoHerrmann/" target="blank">GitHub</a>
-                </div>
-
-                <button class="menu_button icon-menu" onclick="menu.show();"></button>
-            </header>
-
-
-
             <h2>Projects</h2>
 
 
@@ -50,9 +48,15 @@
                 <div class="project_container">
                     <div class="image" style="background-image: url('Images/weather_icon.png');"></div>
 
-                    <h3>Weather</h3>
+                    <h3>PlainWeather</h3>
 
                     <p>A simple weather app built using the OpenWeatherMap API and Chart.js</p>
+
+                    <div class="technologies_container">
+                        <span>OpenWeatherMap API</span><!--
+                        --><span>Chart.js</span><!--
+                        --><span>Fetch API</span>
+                    </div>
 
                     <div class="placeholder"></div>
 
@@ -71,6 +75,12 @@
 
                     <p>A motor vehicle simulator designed to develop automatic transmission shift strategies</p>
 
+                    <div class="technologies_container">
+                        <span>Simulation</span><!--
+                        --><span>Web Audio API</span><!--
+                        --><span>Term Paper</span>
+                    </div>
+
                     <div class="placeholder"></div>
 
                     <div class="links_container">
@@ -87,6 +97,12 @@
                     <h3>Autosnek</h3>
 
                     <p>A snake considering growth and survival possibilities to determine its movements</p>
+
+                    <div class="technologies_container">
+                        <span>Backtracking</span><!--
+                        --><span>Web Workers</span><!--
+                        --><span>Parallel processing</span>
+                    </div>
 
                     <div class="placeholder"></div>
 
@@ -105,6 +121,11 @@
 
                     <p>The substitution table of my school displayed in a mobile friendly layout</p>
 
+                    <div class="technologies_container">
+                        <span>Web Crawling</span><!--
+                        --><span>XMLHttpRequest</span>
+                    </div>
+
                     <div class="placeholder"></div>
 
                     <div class="links_container">
@@ -121,6 +142,12 @@
                     <h3>Timetable</h3>
 
                     <p>A simple PWA helping you to keep track of your school or university schedule</p>
+
+                    <div class="technologies_container">
+                        <span>PWA</span><!--
+                        --><span>FileReader</span><!--
+                        --><span>Dark Theme</span>
+                    </div>
 
                     <div class="placeholder"></div>
 
@@ -139,6 +166,11 @@
 
                     <p>A natural selection simulator allowing you to alter the development of creatures</p>
 
+                    <div class="technologies_container">
+                        <span>Simulation</span><!--
+                        --><span>Chart.js</span>
+                    </div>
+
                     <div class="placeholder"></div>
 
                     <div class="links_container">
@@ -155,6 +187,12 @@
                     <h3>Snek</h3>
 
                     <p>A variant of the arcade classic featuring online leaderboard and offline functionality</p>
+
+                    <div class="technologies_container">
+                        <span>PWA</span><!--
+                        --><span>Flask</span><!--
+                        --><span>SQLite</span>
+                    </div>
 
                     <div class="placeholder"></div>
 
@@ -181,7 +219,18 @@
 
                     menu.classList.add("hidden");
                 }
-            }
+            };
+
+
+
+            document.body.addEventListener("scroll", function(e) {
+                var scroll_position = document.body.scrollTop;
+
+                var greeter_text = document.querySelector("#greeter > .center > div");
+
+                greeter_text.style.transform = `translateY(${0.25 * scroll_position}px)`;
+                greeter_text.style.opacity = 1 - scroll_position / 360;
+            });
         </script>
     </body>
 </html>
