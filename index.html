@@ -16,24 +16,22 @@
             <h1>Leo Herrmann</h1>
 
             <div id="menu" class="hidden">
-                <button class="menu_button icon-cancel" onclick="menu.hide();"></button>
+                <button class="menu_button icon-cancel" onclick="menu.hide();" aria-label="menu close"></button>
 
                 <a onclick="menu.hide();" href="#greeter">Start</a>
                 <a onclick="menu.hide();" href="#main_content">Projects</a>
                 <a onclick="menu.hide();" href="https://github.com/LeoHerrmann/" target="blank">GitHub</a>
             </div>
 
-            <button class="menu_button icon-menu" onclick="menu.show();"></button>
+            <button class="menu_button icon-menu" onclick="menu.show();" aria-label="menu open"></button>
         </header>
 
 
         <div id="greeter">
             <div class="center">
                 <div>
-                <h2>Hey, I'm Leo.</h2>
-                <p>In my free time, I code interactive applications for the web. Here's a selection of my previous work.</p>
-                <!--<p>Here's a selection of my previous projects.</p>-->
-                <!--<a href="#main_content">View projects</a>-->
+                    <h2>Hey, I'm <span>Leo</span>.</h2>
+                    <p>In my free time, I code interactive applications for the web. Here's a selection of my previous work.</p>
                 </div>
             </div>
         </div>
@@ -50,7 +48,7 @@
                 <div class="project_container">
                     <div class="image" style="background-image: url('Images/weather_icon.png');"></div>
 
-                    <h3>Weather</h3>
+                    <h3>PlainWeather</h3>
 
                     <p>A simple weather app built using the OpenWeatherMap API and Chart.js</p>
 
@@ -102,8 +100,8 @@
 
                     <div class="technologies_container">
                         <span>Backtracking</span><!--
-                        --><span>Parallel processing</span><!--
-                        --><span>Web Workers API</span>
+                        --><span>Web Workers</span><!--
+                        --><span>Parallel processing</span>
                     </div>
 
                     <div class="placeholder"></div>
@@ -221,7 +219,7 @@
 
                     menu.classList.add("hidden");
                 }
-            }
+            };
         </script>
     </body>
 </html>
